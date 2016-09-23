@@ -11,11 +11,11 @@ RUN yum makecache
 #install ifconfig
 RUN yum install -y net-tools.x86_64
 
-ADD dockerd.sh  /etc/rc.d/rc.sysinit
-RUN chmod 777  /etc/rc.d/rc.sysinit
+ADD dockerd.sh  /dockerd.sh
+RUN chmod 777  /dockerd.sh
 
 #ENTRYPOINT bash /dockerd.sh
 #CMD ["/bin/bash"]
 #CMD bash /dockerd.sh
 
-ENTRYPOINT service ssh restart && bash
+ENTRYPOINT bash /dockerd.sh
