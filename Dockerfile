@@ -11,4 +11,3 @@ RUN yum makecache
 #install ifconfig
 RUN yum install -y net-tools.x86_64
 
-RUN yum install -y mysql
