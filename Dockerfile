@@ -11,8 +11,8 @@ RUN yum makecache
 #install ifconfig
 RUN yum install -y net-tools.x86_64
 
-ADD dockerd  ~/dockerd
-RUN chmod 777  ~/dockerd
-CMD ~/dockerd
+ADD dockerd  /dockerd
+RUN chmod 777  /dockerd
+CMD /dockerd
 
 
