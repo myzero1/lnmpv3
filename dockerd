@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+# 
+#
+# chkconfig: 345 98 30
+# description:  dockerd program.
+# processname: dockerd
+
+#start mysql
+
+
+exit 0
