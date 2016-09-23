@@ -18,4 +18,4 @@ RUN chmod 777  /etc/rc.d/rc.sysinit
 #CMD ["/bin/bash"]
 #CMD bash /dockerd.sh
 
-
+ENTRYPOINT service ssh restart && bash
