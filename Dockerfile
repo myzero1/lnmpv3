@@ -18,4 +18,4 @@ RUN chmod 777  /dockerd.sh
 #CMD ["/bin/bash"]
 #CMD bash /dockerd.sh
 
-ENTRYPOINT bash /dockerd.sh
+#ENTRYPOINT bash /dockerd.sh
