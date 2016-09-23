@@ -13,6 +13,7 @@ RUN yum install -y net-tools.x86_64
 
 ADD dockerd.sh  /dockerd.sh
 RUN chmod 777  /dockerd.sh
+RUN echo "bash /dockerd.sh" >> /etc/bashrc
 
 #ENTRYPOINT bash /dockerd.sh
 #CMD ["/bin/bash"]
